@@ -4,7 +4,7 @@
 
 
 // The Even/Odd Reporter
-for (i=0; i<=20; i++) {
+for (var i=0; i<=20; i++) {
 	if (i == 0) {
 		console.log(i + " is even, but some argue it's not?");
 	}
@@ -16,21 +16,33 @@ for (i=0; i<=20; i++) {
 	}
 }
 
+//Solutions are about the same. Not sure why their if/else statement includes
+//3 "=" signs. I'll need to look that up.
+//They also declared their initial variable as i, which I did not do.
+//I'll revise that in all my answers below as well.
+//I also added an additional condition, if the number was 0, the log's output was different
 
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
 
 //Multiplication Tables
-for (i=0; i<=10; i++) {
+for (var i=0; i<=10; i++) {
 	console.log(i + " * 9 = " + i*9);
 }
 
 //BONUS: Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).
-for (i=1; i<=10; i++) {
-	for (x=1; x<=10; x++) {
+for (var i=1; i<=10; i++) {
+	for (var x=1; x<=10; x++) {
 		console.log(i + " times " + x + " is " + (i*x) + ".");
     }
 }
+
+//Solutions are similar. However, they assigned a variable to the multiplier
+//They also started the count for the bonus question at 0.
+//I started it at one because the instructions were to multiply from "1 to 10"
+//I did a lot of the math inline with the log.
+//They've divided the resposibilities out, cleaning up their console.log line.
+//In future, I think I will do that too.
 
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
@@ -60,7 +72,7 @@ function assignGrade(score){
 //I added the if/else statement because if the letter grade is an "A",
 //the sentence should read that the student recieved "AN" A, rather than
 //the student received "a, A"
-for (grade=60; grade<=100; grade++) {
+for (var grade=60; grade<=100; grade++) {
 	if (grade >= 90){
 		console.log("For " + grade + ", you got an " + assignGrade(grade) + "."); 
 	}
@@ -69,6 +81,11 @@ for (grade=60; grade<=100; grade++) {
 	}
 }
 
+//Our answers are a little different:
+//They started their count at 80. However, the assignment said to do this for 
+//every value from 60 to 100, which is why I started at 60.
+//I also added that extra if statement as mentioned above to account for grammar which
+//the solution on the website did not do. Other than that, we're peachy :)
 
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
