@@ -17,6 +17,7 @@ function tellFortune(kids, name, place, job) {
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
 
+
 //The Age Calculator
 function calculateAge(birthYear, currentYear){
 	var age = currentYear - birthYear;
@@ -46,6 +47,23 @@ calculateAge(2003);
 //--------------------------------------------------------------------------------------//
 
 
+//The Lifetime Supply Calculator
 
+//Note to self: as per instructions, 
+//calculate amount consumed for rest of life based on a constant max age.
+function calculateSupply(age, amountPerDay){
+	var maxAge = 100;
+	var totalAmount = ((maxAge - age)*365)*amountPerDay;
+	var message = "You will need " + totalAmount + " to last you until the ripe old age of " + maxAge + ".";
+	console.log(message);
+}
 
+calculateSupply(50, 2)
+calculateSupply(20, 5)
+calculateSupply(10, 10)
+
+// Looks good! Compared solutions and they look the same!
+
+//--------------------------------------------------------------------------------------//
+//--------------------------------------------------------------------------------------//
 
