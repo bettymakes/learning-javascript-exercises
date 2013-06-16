@@ -47,3 +47,37 @@ console.log(helloWorld("itl"));
 
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
+
+
+//The Grade Assigner
+function assignGrade(score){
+	if (score >= 90) {
+		return "A";
+	}
+	else if (score >= 80 && score < 90) {
+		return "B";
+	}
+	else if (score >= 70 && score < 80) {
+		return "C";
+	}
+	else if (score >= 60 && score < 70) {
+		return "D";
+	}
+	else if (score >=50 && score < 60) {
+		return "E";
+	}
+	else {
+		return "F";
+	}
+}
+
+console.log(assignGrade(93));
+console.log(assignGrade(85));
+console.log(assignGrade(72));
+console.log(assignGrade(68));
+console.log(assignGrade(54));
+console.log(assignGrade(29));
+
+//--------------------------------------------------------------------------------------//
+//--------------------------------------------------------------------------------------//
+
