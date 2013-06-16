@@ -34,3 +34,43 @@ for (i=1; i<=10; i++) {
 
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
+
+//Grade Assigner
+function assignGrade(score){
+	if (score >= 90) {
+		return "A";
+	}
+	else if (score >= 80 ) {
+		return "B";
+	}
+	else if (score >= 70 ) {
+		return "C";
+	}
+	else if (score >= 60 ) {
+		return "D";
+	}
+	else if (score >=50) {
+		return "E";
+	}
+	else {
+		return "F";
+	}
+}
+
+//I added the if/else statement because if the letter grade is an "A",
+//the sentence should read that the student recieved "AN" A, rather than
+//the student received "a, A"
+for (grade=60; grade<=100; grade++) {
+	if (grade >= 90){
+		console.log("For " + grade + ", you got an " + assignGrade(grade) + "."); 
+	}
+	else {
+		console.log("For " + grade + ", you got a " + assignGrade(grade) + ".");  
+	}
+}
+
+
+//--------------------------------------------------------------------------------------//
+//--------------------------------------------------------------------------------------//
+
+
