@@ -10,7 +10,12 @@ function fortune(kids, name, place, job) {
 
  fortune(10, "Polkaroo", "Toronto", "developper");
 
+// Compared to solution on website, my answer is different.
+// I've created a function that will accept a variety of inputs,
+// rather than pre-assigning variables and outputting to console.
 
+//--------------------------------------------------------------------------------------//
+//--------------------------------------------------------------------------------------//
 
 //The Age Calculator
 function ageCalculator(birthYear, currentYear){
@@ -28,5 +33,25 @@ function ageCalculator(birthYear, currentYear){
 }
 
 ageCalculator()
+
+// Compared to solution on website, my answer is differet again.
+// Similar to Fortune Teller solution, I've wrapped my solution in a function.
+
+//--------------------------------------------------------------------------------------//
+//--------------------------------------------------------------------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
