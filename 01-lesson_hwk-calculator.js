@@ -36,3 +36,27 @@ percentOf(2,4);
 
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
+
+// #4 areaOfCircle function
+function areaOfCircle(radius){
+	var area = (3.141592653589793 * (radius*radius));
+	console.log("The area for a circle with radius " + radius + " is " + area + ".");
+}
+
+areaOfCircle(2);
+
+// or, Math.PI is predefined in javascript
+function areaOfCircle(radius){
+	var area = (Math.PI * (radius*radius));
+	console.log("The area for a circle with radius " + radius + " is " + area + ".");
+}
+
+areaOfCircle(2);
+
+//--------------------------------------------------------------------------------------//
+//--------------------------------------------------------------------------------------//
+
+
+
+
+
