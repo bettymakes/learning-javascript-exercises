@@ -81,3 +81,24 @@ console.log(assignGrade(29));
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
 
+//The Pluralizer
+function pluralize(noun, num){
+	if (num == 1) {
+		return num + " " + noun + ".";
+	}
+	else if (num > 1) {
+		return num + " " + noun + "s.";  
+	}
+	else {
+		return "Your number must be at least 1 or greater";
+	}
+}
+
+console.log(pluralize("dog", 1));
+console.log(pluralize("dog", 3));
+console.log(pluralize("dog", -2));
+
+//--------------------------------------------------------------------------------------//
+//--------------------------------------------------------------------------------------//
+
+
