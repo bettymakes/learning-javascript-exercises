@@ -11,4 +11,22 @@ function fortune(kids, name, place, job) {
  fortune(10, "Polkaroo", "Toronto", "developper");
 
 
+
 //The Age Calculator
+function ageCalculator(birthYear, currentYear){
+    var age = currentYear - birthYear;
+    console.log("You are either " + (age-1) + " or " + age + ".");
+}
+
+ageCalculator(2003, 2013);
+// or!
+function ageCalculator(birthYear, currentYear){
+    var currentYear = 2013;
+    var birthYear = 2003;
+    var age = currentYear - birthYear;
+    console.log("You are either " + (age-1) + " or " + age + ".");
+}
+
+ageCalculator()
+
+
