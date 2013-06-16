@@ -23,3 +23,27 @@ greaterNum(1, 1);
 
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
+
+
+//The World Translator
+function helloWorld(langCode) {
+	if (langCode == "piglatin") {
+		return("Ellohay, orldway!");
+	}
+	else if (langCode == "fr") {
+		return("Bonjour, tout le monde!");
+	}
+	else if (langCode == "itl") {
+		return("Ciao, mondo!");
+	}
+	else {
+		return("Hello, World!");
+	}
+}
+
+console.log(helloWorld("test"));
+console.log(helloWorld("fr"));
+console.log(helloWorld("itl"));
+
+//--------------------------------------------------------------------------------------//
+//--------------------------------------------------------------------------------------//
