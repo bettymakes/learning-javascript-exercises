@@ -21,6 +21,8 @@ greaterNum(4, 11);
 greaterNum(1, 1);
 
 
+//Solution differs slightly. They logged their answers outside of the function.
+
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
 
@@ -45,25 +47,50 @@ console.log(helloWorld("test"));
 console.log(helloWorld("fr"));
 console.log(helloWorld("itl"));
 
+//Solutions look about the same! :)
+
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
 
 
 //The Grade Assigner
+// Commented out my original answer. Refacted it, see below //
+// function assignGrade(score){
+// 	if (score >= 90) {
+// 		return "A";
+// 	}
+// 	else if (score >= 80 && score < 90) {
+// 		return "B";
+// 	}
+// 	else if (score >= 70 && score < 80) {
+// 		return "C";
+// 	}
+// 	else if (score >= 60 && score < 70) {
+// 		return "D";
+// 	}
+// 	else if (score >=50 && score < 60) {
+// 		return "E";
+// 	}
+// 	else {
+// 		return "F";
+// 	}
+// }
+// Commented out my original answer. Refacted it, see below //
+// Commented out my original answer. Refacted it, see below //
 function assignGrade(score){
 	if (score >= 90) {
 		return "A";
 	}
-	else if (score >= 80 && score < 90) {
+	else if (score >= 80 ) {
 		return "B";
 	}
-	else if (score >= 70 && score < 80) {
+	else if (score >= 70 ) {
 		return "C";
 	}
-	else if (score >= 60 && score < 70) {
+	else if (score >= 60 ) {
 		return "D";
 	}
-	else if (score >=50 && score < 60) {
+	else if (score >=50) {
 		return "E";
 	}
 	else {
@@ -77,6 +104,9 @@ console.log(assignGrade(72));
 console.log(assignGrade(68));
 console.log(assignGrade(54));
 console.log(assignGrade(29));
+
+//Revised my answer to one that is similar to the website.
+//Their's is written much better. There was redundant logic in my answer.
 
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
@@ -97,6 +127,8 @@ function pluralize(noun, num){
 console.log(pluralize("dog", 1));
 console.log(pluralize("dog", 3));
 console.log(pluralize("dog", -2));
+
+//Similar answers 
 
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
