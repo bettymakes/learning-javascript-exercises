@@ -53,6 +53,16 @@ function areaOfCircle(radius){
 
 areaOfCircle(2);
 
+//BONUS:Round the result so there are only two digits after the decimal.
+//Used .toFixed(num_of_decimal_places) method
+function areaOfCircle(radius){
+	var area = (Math.PI * (radius*radius)).toFixed(2);
+	console.log("The area for a circle with radius " + radius + " is " + area + ".");
+}
+
+areaOfCircle(2);
+
+
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
 
