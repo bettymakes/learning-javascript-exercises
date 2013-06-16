@@ -10,6 +10,7 @@ function fortune(kids, name, place, job) {
 
  fortune(10, "Polkaroo", "Toronto", "developper");
 
+
 // Compared to solution on website, my answer is different.
 // I've created a function that will accept a variety of inputs,
 // rather than pre-assigning variables and outputting to console.
