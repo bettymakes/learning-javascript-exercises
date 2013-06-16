@@ -40,11 +40,23 @@ ageCalculator()
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
 
+//Lifetime Supply Calculator
+
+// It looks as though I do not need to wrap my answers inside a function.
+// I will complete this exercise without doing so.
+
+var currentAge = 10;
+var maximumAge = 80;
+var amountPerDay = 5;
+var totalAmount = ((maximumAge - currentAge)*365)*amountPerDay;
+console.log("You will need " + totalAmount + " to last you until the ripe old age of " + maximumAge + ".");
 
 
+// My solution & the website's are pretty similar.
+// However, they also assigned the final ouput to a variable.
 
-
-
+//--------------------------------------------------------------------------------------//
+//--------------------------------------------------------------------------------------//
 
 
 
