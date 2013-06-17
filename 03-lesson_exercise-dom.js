@@ -12,5 +12,11 @@ googleLogo = document.getElementById("hplogo");
 //'set'ting new Attributes
 googleLogo.setAttribute("style", "background: url(http://images.wikia.com/powerrangers/images/2/2f/Logo_Power_Rangers_1_MMPR_Era.png) no-repeat; background-size:250px 90px; height:90px; width:250px");
 
+// 'get'ting the button element by ID
+googleBtn = document.getElementById("gbqfsa");
+
+//To change the text between the span tags, I used ".innerHTML"
+googleBtn.innerHTML = "Morph Me!";
+
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
