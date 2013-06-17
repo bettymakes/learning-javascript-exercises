@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Book List</title>
+	</head>
+	<body>
+		<h1>My Book List</h1>
+		<script>
+			var booksArray = [
+		{ 
+			bookTitle: "G Eggs Ham",
+			author: "Seussy",
+			alreadyRead: true 
+		}, 
+		{
+			bookTitle: "Love Forever",
+			author: "R. Munsch-kin",
+			alreadyRead: true
+		},
+		{
+			bookTitle: "Chicken Bumps",
+			author: "RL Steinburg",
+			alreadyRead: false
+		}
+		]
+
+		for (var i=0; i<booksArray.length; i++){
+			var newParagraph = document.createElement("p");
+			var bookName = booksArray[i].bookTitle;
+			var bookAuthor = booksArray[i].author;
+			var textString = bookName + " by " + bookAuthor;
+			
+			newParagraph.innerHTML = textString;
+			document.body.appendChild(newParagraph);
+
+		}
+		</script>
+	</body>
+</html>
