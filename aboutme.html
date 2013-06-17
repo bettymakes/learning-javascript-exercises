@@ -1,0 +1,55 @@
+<!-- Lesson: 3
+Exercises: The DOM - About Me
+URL: http://www.teaching-materials.org/javascript/exercises/dom.html
+
+
+About Me -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>About Me</title>
+	</head>
+	<body>
+		<h1>About Me</h1>
+		<ul>
+			<li>Name: <span id="name"></span>
+			<li>Age:  <span id="age"></span>
+			<li>Hometown: <span id="hometown"></span>
+		</ul>
+	<script>
+		//getElementsByTagName returns an array
+		document.getElementsByTagName("body")[0].style.fontFamily="Arial, sans-serif";
+		
+		//Adding Name
+		var nameSpan = document.getElementById("name");
+		nameSpan.innerHTML = "Sponge Bob";
+
+		//Adding Age
+		var ageSpan = document.getElementById("age");
+		ageSpan.innerHTML = "Immortal";
+
+		//Adding Hometown:
+		var hometownSpan = document.getElementById("hometown");
+		hometownSpan.innerHTML = "Under The Sea"
+		
+		//Iterate through each li
+		var listItem = document.getElementsByTagName("li");
+		for (var indexPosition=0; indexPosition < listItem.length; indexPosition ++) {
+			// listItem[indexPosition].setAttribute("class", "listItem");   <-- either methods work ".setAttribute" or ".className"
+			listItem[indexPosition].className = "listItem";
+		}
+
+		styling = document.getElementsByClassName("listItem");
+		for (var index=0; index < styling.length; index ++) {
+		styling[index].setAttribute("style", "color: red;")
+		}
+
+		var newImg = document.createElement("img");
+		newImg.src = "http://images4.wikia.nocookie.net/__cb20120807051902/poohadventures/images/a/a7/Spongebob009.gif"
+		document.body.appendChild(newImg);
+
+	</script>
+	</body>
+</html>
