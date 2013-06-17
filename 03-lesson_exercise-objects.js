@@ -57,6 +57,38 @@ for (var index = 0; index < booksArray.length; index ++) {
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
 
+//The Movie Database
+
+var favMovie = {
+	movieTitle: "Lorax",
+	duration: "132 minutes",
+	stars: ["Orange Critter", "Some guy", "Tizzy Swift"]
+}
+
+function movieInfo(movie){
+	console.log(movie.movieTitle + " lasts for " + movie.duration + ". Stars: " + movie.stars[0] + ", " + movie.stars[1] + ", " + movie.stars[2] + ".");
+}
+
+movieInfo(favMovie);
+
+
+//--------------------------------------------------------------------------------------//
+//--------------------------------------------------------------------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
