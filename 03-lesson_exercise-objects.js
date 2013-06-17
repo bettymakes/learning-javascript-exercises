@@ -18,6 +18,10 @@ console.log(favRecipe.ingredients[0]);
 console.log(favRecipe.ingredients[1]);
 console.log(favRecipe.ingredients[2]);
 
+//Almost the same except I could improve my last 3 console.log lines,
+//Solution iterates via for loop rather than printing out 3 lines. Smart!
+//One other point I noticed was different but I'm not sure why ...
+//for title, servings, and ingredients, the solution has " " quotes, around those words. Why?
 
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
@@ -54,6 +58,11 @@ for (var index = 0; index < booksArray.length; index ++) {
 	}
 }
 
+//Solutions are similar, except they assigned the book title & author string into a variable.
+//I assigned the iterated book titles and authors to variables.
+//The assignment of variables varied, results are the same.
+//However, I like their code better. Touche. Well done, Solution.
+
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
 
@@ -71,34 +80,11 @@ function movieInfo(movie){
 
 movieInfo(favMovie);
 
+//Again, similar solutions except I do like theirs a lot better.
+//In their first solution, they iterated through the movie.stars index.
+//In the second soultion, they called the following method "movie.stars,join(", ")".
+//SMART!!! I'll try that out next time.
+
 
 //--------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------//
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
