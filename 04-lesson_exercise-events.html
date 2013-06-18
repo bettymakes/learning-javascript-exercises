@@ -3,4 +3,38 @@ Exercises: Events
 URL: http://www.teaching-materials.org/javascript/exercises/events.html
 
 
-Cat Walk -->
+Mad Libs -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+	<h1>Mad Libs</h1>
+	<ul>
+		<li>Noun: <input type="text" id="noun">
+		<li>Adjective: <input type="text" id="adjective">
+		<li>Someone's Name: <input type="text" id="name">
+	</ul>
+	<button id="lib-button">Lib it!</button>
+	<div id="story"></div>
+
+	<script>
+
+		var button = document.getElementById("lib-button");
+		function makeMadLib() {
+		var noun = document.getElementById("noun").value;
+		var adj = document.getElementById("adjective").value;
+		var nom = document.getElementById("name").value;
+
+		// var textString = nom + " really likes " + adj + " " + noun + ".";
+
+		var output = document.getElementById("story");
+		output.innerHTML = nom + " really likes " + adj + " " + noun + ".";
+	}
+	button.addEventListener('click', makeMadLib);
+	</script>
+	</body>
+</html>
