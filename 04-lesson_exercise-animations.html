@@ -1,0 +1,42 @@
+<!-- Lesson: 4
+Exercises: Animations
+URL: http://www.teaching-materials.org/javascript/exercises/objects.html
+
+
+Cat Walk -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Cat Walk</title>
+	</head>
+	 <body>
+		<img style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif">
+	
+		<script>
+			var img = document.getElementsByTagName('img')[0];
+			img.style.left = '0px';
+			function catWalk() {
+				// leftPost calculates image's left position at the start of the function
+				var leftPos = parseInt(img.style.left);
+				var leftAni = leftPos + 10;
+				var wd = window.innerWidth;
+
+				img.style.left = leftAni + 'px';
+
+				// If the left position of the image is larger than the window's size + image width, reset left position to 0px
+				if(leftPos > (wd-img.width)) {
+					img.style.left = '0px';
+				}
+			}
+
+			
+
+
+			// .setInterval function:
+			// for every 50 miliseconds, execute catWalk function
+			window.setInterval(catWalk,50);
+		</script>
+	</body>
+</html>
